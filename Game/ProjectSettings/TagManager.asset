@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3582544353
+    locked: 0
+  - name: Player
+    uniqueID: 788663831
+    locked: 0
+  - name: Zombie
+    uniqueID: 93702567
+    locked: 0
+  - name: Effects
+    uniqueID: 1563209933
+    locked: 0
+  - name: Bullets
+    uniqueID: 475570395
+    locked: 0
+  - name: Foreground
+    uniqueID: 2194347241
+    locked: 0
