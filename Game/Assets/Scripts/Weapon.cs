@@ -4,13 +4,37 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+    public float fireTime = 0.5f;
+
+    public bool isFiring = false;
+
+    private void SetFiring()
+    {
+        isFiring = false;
+    }
+
+    private void Fire()
+    {
+        isFiring = true;
+        Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+
+        Invoke("SetFiring", fireTime);
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+            if (!isFiring)
+                Fire();
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
