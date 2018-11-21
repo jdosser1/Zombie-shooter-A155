@@ -9,6 +9,7 @@ public class Damage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        print("!!");
         collision.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         GetComponent<Collider2D>().enabled = false;
         Invoke("ResetTrigger", resetTime);
