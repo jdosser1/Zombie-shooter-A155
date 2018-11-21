@@ -5872,7 +5872,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 802971448}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: BulletSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8450,7 +8450,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1023093310}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: BulletSpawnL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8545,7 +8545,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.4}
@@ -8858,8 +8858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75eff4b15b8548479dafce722e74765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  scoreText: {fileID: 0}
+  healthBar: {fileID: 1548634194}
+  scoreText: {fileID: 1612107927}
   playerScore: 0
 --- !u!1 &1535412404
 GameObject:
@@ -8980,7 +8980,7 @@ GameObject:
   - component: {fileID: 1548634193}
   - component: {fileID: 1548634194}
   m_Layer: 0
-  m_Name: Slider
+  m_Name: HealthSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9140,7 +9140,6 @@ GameObject:
   - component: {fileID: 1843809352}
   - component: {fileID: 1843809351}
   - component: {fileID: 1843809350}
-  - component: {fileID: 1843809355}
   - component: {fileID: 1843809361}
   - component: {fileID: 1843809349}
   - component: {fileID: 1843809356}
@@ -9186,18 +9185,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDamaged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 65bd5a30ed81b484e86343def494dbd2, type: 3}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!58 &1843809350
@@ -9209,7 +9197,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.013654239, y: -0.55}
@@ -9307,26 +9295,6 @@ MonoBehaviour:
   bezierTangentLength: 0.4
   offset: 0.2
   factor: 0.1
---- !u!50 &1843809355
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1843809348}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.5443397
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &1843809356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9511,7 +9479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c467fd295abada45a8d0c0520d58cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 10
   resetTime: 5
 --- !u!58 &2022295303
 CircleCollider2D:
@@ -9527,7 +9495,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.19821344}
   serializedVersion: 2
-  m_Radius: 0.69327986
+  m_Radius: 0.5
 --- !u!1 &2117799666
 GameObject:
   m_ObjectHideFlags: 0

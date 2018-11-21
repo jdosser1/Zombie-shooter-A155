@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        print(other.transform);
         other.transform.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         Die();
     }

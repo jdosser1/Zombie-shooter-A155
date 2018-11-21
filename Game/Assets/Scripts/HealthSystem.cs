@@ -12,7 +12,7 @@ public class HealthSystem : MonoBehaviour {
 
     public void TakeDamage( int damage)
     {
-        print("!");
+
         health -= damage;
 
         onDamaged.Invoke(health);
