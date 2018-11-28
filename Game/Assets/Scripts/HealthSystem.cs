@@ -7,8 +7,17 @@ public class OnDamagedEvent : UnityEvent<int> { }
 public class HealthSystem : MonoBehaviour {
 
     public int health = 10;
+
+    private int initialHealth;
+
     public UnityEvent onDie;
     public OnDamagedEvent onDamaged;
+
+
+    void Start()
+    {
+        initialHealth = health;
+    }
 
     public void TakeDamage( int damage)
     {
@@ -22,13 +31,9 @@ public class HealthSystem : MonoBehaviour {
             onDie.Invoke() ;
         }
     }
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void ResetHealth()
+    {
+        health = initialHealth;
+    }
 }
