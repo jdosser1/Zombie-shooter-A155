@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50230041786062412}
   - component: {fileID: 114433118518613532}
   m_Layer: 8
-  m_Name: bullet
+  m_Name: bullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 700
-  damage: 2
+  damage: 20
 --- !u!212 &212532116812446102
 SpriteRenderer:
   m_ObjectHideFlags: 1

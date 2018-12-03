@@ -59,3 +59,9 @@ TagManager:
   - name: Foreground
     uniqueID: 2194347241
     locked: 0
+  - name: Boss
+    uniqueID: 3365059095
+    locked: 0
+  - name: PowerUp
+    uniqueID: 479259397
+    locked: 0
