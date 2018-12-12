@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorCloser : MonoBehaviour {
 
     public Transform door;
+    public GameObject boss;
 
 	// Use this for initialization
 	void Start () {
@@ -14,5 +15,6 @@ public class DoorCloser : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2D (Collider2D other) {
         door.gameObject.SetActive(true);
+        boss.SetActive(true);
 	}
 }
