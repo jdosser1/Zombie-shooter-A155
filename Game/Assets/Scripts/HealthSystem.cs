@@ -9,6 +9,8 @@ public class HealthSystem : MonoBehaviour {
     public int health = 10;
 
     private int initialHealth;
+    public float Maxhealth = 100;
+    public float current;
 
     public UnityEvent onDie;
     public OnDamagedEvent onDamaged;

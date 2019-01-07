@@ -1,5 +1,8 @@
 READ ME!
 
+This is an Alpha Build of the project.
+There might be some bugs, which I'm fixing
+
 Known Bugs
 
 Enemies can click through the walls. This is due to their collider. 
