@@ -22,5 +22,6 @@ public class Game : MonoBehaviour {
         player.GetComponent<HealthSystem>().ResetHealth();
         player.GetComponent<HealthSystem>().TakeDamage(0);
         SceneManager.LoadScene("Scene 1");
+
     }
 }
