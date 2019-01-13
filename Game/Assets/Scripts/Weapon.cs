@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
-
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     public float fireTime = 0.5f;
-
-    public bool isFiring = false;
+    private bool isFiring = false;
 
     private void SetFiring()
     {
@@ -18,23 +16,20 @@ public class Weapon : MonoBehaviour {
     private void Fire()
     {
         isFiring = true;
-        Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
 
+        Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+       
         Invoke("SetFiring", fireTime);
     }
-
-    private void Update()
+   
+ private void Update()
     {
         if (Input.GetMouseButton(0))
+        {
             if (!isFiring)
+            {
                 Fire();
+            }
+        }
     }
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-
 }
