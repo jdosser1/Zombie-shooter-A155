@@ -21,7 +21,8 @@ public class Game : MonoBehaviour {
         player.position = checkPoints[currentCheckpointIndex].position;
         player.GetComponent<HealthSystem>().ResetHealth();
         player.GetComponent<HealthSystem>().TakeDamage(0);
-        SceneManager.LoadScene("Scene 1");
+        Scene thisScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(thisScene.buildIndex);
 
     }
 }

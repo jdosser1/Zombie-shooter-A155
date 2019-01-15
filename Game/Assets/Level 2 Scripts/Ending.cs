@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Ending : MonoBehaviour {
 
-    [SerializeField] private string nextLevel;
+    public string nextLevel;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
