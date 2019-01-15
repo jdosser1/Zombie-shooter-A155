@@ -20352,6 +20352,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d33c08317ce1f2a4a9603763aa54c65f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &211664111 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1442622052093314, guid: 35f66947c237ba3478318f80913b46a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 118273082}
+--- !u!114 &211664112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 211664111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7271c08b7b4bc514f868e2fd7a11be3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: Level 2
 --- !u!1 &231769954
 GameObject:
   m_ObjectHideFlags: 0
@@ -28533,7 +28550,7 @@ Prefab:
     - target: {fileID: 114762327195575304, guid: 570a29834424a854ca6f555e760eb37f,
         type: 2}
       propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114762327195575304, guid: 570a29834424a854ca6f555e760eb37f,
         type: 2}
@@ -28603,6 +28620,16 @@ Prefab:
         type: 2}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762327195575304, guid: 570a29834424a854ca6f555e760eb37f,
+        type: 2}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SendMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762327195575304, guid: 570a29834424a854ca6f555e760eb37f,
+        type: 2}
+      propertyPath: onDie.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114804006778789520, guid: 570a29834424a854ca6f555e760eb37f, type: 2}
