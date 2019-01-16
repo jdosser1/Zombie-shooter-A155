@@ -27,9 +27,9 @@ public class UI : MonoBehaviour {
         healthBar.value = health;
     }
 
-    private void UpdateScore (int playerScore)
+    private void UpdateScore (int newPlayerScore)
     {
-        playerScore += playerScore;
+        playerScore += newPlayerScore;
         scoreText.text = "SCORE: " + playerScore.ToString();
     }
 }
